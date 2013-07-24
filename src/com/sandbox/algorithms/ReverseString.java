@@ -57,7 +57,7 @@ public class ReverseString {
 	
 	public static void main(String[] args) {
 		System.out.println("ReverseString.main() NORC "+reverseWORecursion("Hello Me"));
-		System.out.println("ReverseString.main() NORC "+reverseWithRecursion("de"));
+		System.out.println("ReverseString.main() NORC "+reverseWithRecursion("Madam"));
 		System.out.println("ReverseString.main() NORC "+reverseWithoutTempVariables("TellMe"));
 		System.out.println("ReverseString.main() NORC "+reverseInPlace("InPlace"));
 	}

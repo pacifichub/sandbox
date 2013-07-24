@@ -75,6 +75,23 @@ public class LinkedList {
 		return current;
 	}
 	
+	public Node findKthElementFromEnd(int k){
+		Node current = startNode;
+		Node currentK = startNode;
+		
+		int counter = 0;
+		
+		while(current.getNextNode() != null){
+			counter++;
+			if(counter >= k){
+				currentK = currentK.getNextNode();
+			}
+			current = current.getNextNode();
+		}
+		
+		return currentK;
+	}
+	
 	public void delete(String dataToBeDeleted){
 		Node prev = null;
 		Node current = startNode;
@@ -113,25 +130,31 @@ public class LinkedList {
 	public static void main(String[] args) {
 		Node newNode = new Node("5");
 		LinkedList ll = new LinkedList(newNode);
-		System.out.println("LinkedList.main() Add StartNode 5: "+ll.toString());
+//		System.out.println("LinkedList.main() Add StartNode 5: "+ll.toString());
 		ll.addFirst("6");
+		ll.addFirst("8");
+		ll.addFirst("4");
+		ll.addFirst("1");
+		ll.addFirst("9");
 		System.out.println("LinkedList.main() Add NewNode 6: "+ll.toString());
 		
-		LinkedList addLastList = new LinkedList(new Node("5"));
-		addLastList.addLast("8");
-		addLastList.addLast("4");
-
-		System.out.println("LinkedList.main() Add Last 8: "+addLastList.toString());
+		System.out.println("LinkedList.main() "+ll.findKthElementFromEnd(3));
 		
-		System.out.println("LinkedList.main() Middle Element : "+findMiddleOfLinkedList(addLastList.startNode));
-		Node reverseWithRecursion = reverseWithRecursion(addLastList.startNode);
-		System.out.println("LinkedList.main() Reversed : "+reverseWithRecursion.toString());
-		
-		addLastList.addLast("8");
-		addLastList.addLast("4");
-		System.out.println("LinkedList.main() Before Delete 8: "+addLastList.toString());
-		addLastList.delete("4");
-		System.out.println("LinkedList.main() Delete 8: "+addLastList.toString());
+//		LinkedList addLastList = new LinkedList(new Node("5"));
+//		addLastList.addLast("8");
+//		addLastList.addLast("4");
+//
+//		System.out.println("LinkedList.main() Add Last 8: "+addLastList.toString());
+//		
+//		System.out.println("LinkedList.main() Middle Element : "+findMiddleOfLinkedList(addLastList.startNode));
+//		Node reverseWithRecursion = reverseWithRecursion(addLastList.startNode);
+//		System.out.println("LinkedList.main() Reversed : "+reverseWithRecursion.toString());
+//		
+//		addLastList.addLast("8");
+//		addLastList.addLast("4");
+//		System.out.println("LinkedList.main() Before Delete 8: "+addLastList.toString());
+//		addLastList.delete("4");
+//		System.out.println("LinkedList.main() Delete 8: "+addLastList.toString());
 		
 	}
 

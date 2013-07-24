@@ -179,7 +179,7 @@ public class SLL {
 		sll.addFirst("4");
 		sll.addLast("6");
 		System.out.println("SLL.main() "+sll.toString());
-//		System.out.println("SLL.main() "+sll.findKthElementFromEnd(4));
+		System.out.println("SLL.main() Kth Element "+sll.findKthElementFromEnd(2));
 //		sll.deleteDuplicates();
 //		System.out.println("SLL.main() After Duplicate Cleanup "+sll.toString());
 //		System.out.println("SLL.main() deleteing 3: "+sll.delete(3));
@@ -189,7 +189,7 @@ public class SLL {
 //		System.out.println("SLL.main() deleteing 5: "+sll.delete(5));
 //		System.out.println("SLL.main() "+sll.toString());
 //		System.out.println("SLL.main() deleteing 6: "+sll.delete(6));
-		System.out.println("SLL.main() deleteing 6: "+sll.deleteWithRecursion(1, sll.startnode));
+//		System.out.println("SLL.main() deleteing 6: "+sll.deleteWithRecursion(1, sll.startnode));
 //		System.out.println("SLL.main() "+sll.toString());
 //		
 //		System.out.println("SLL.main() "+sll.reverseWithRecursion(sll.startnode));
