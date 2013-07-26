@@ -1,6 +1,6 @@
-package com.sandbox.designpatterns.FactoryMethod;
+package com.sandbox.designpatterns.factoryMethod;
 
-import com.sandbox.designpatterns.FactoryMethod.Product.ProductTypes;
+import com.sandbox.designpatterns.factoryMethod.Product.ProductTypes;
 
 public class ProductFactory {
 

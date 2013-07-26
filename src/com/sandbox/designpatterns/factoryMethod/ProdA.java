@@ -1,4 +1,4 @@
-package com.sandbox.designpatterns.FactoryMethod;
+package com.sandbox.designpatterns.factoryMethod;
 
 public class ProdA extends Product{
 
